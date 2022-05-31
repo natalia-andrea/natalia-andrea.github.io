@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./estilo/miestilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="./validacion.js"></script>
+
+    <title>Casa Natalia Kids</title>
+</head>
+
+
+<body>
+
+<div class="header">
+    <h1>Casa Natalia Kids</h1>
+</div>
+    
+<ul class="navegacion">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="productos.html">Productos</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+
+   
+
+<div class="centro">
+    <div class="side">
+         <div class="miimagen" >
+            <img class="miimagen1" src="imagenes/icono.jpg"><br>
+            <h2>Sobre nosotros:</h2>
+            <p>Somos una empresa con mas de 20 años de trayectoria dedicadas al rubro , creando y fabricando la mejor indumentaria para niños y bebés, 
+            eligiendo como siempre la mejor materia prima y con los mejores precios del mercado.</p> <br><br>      
+        </div>
+        <div class="miimagen"> 
+            <p>Realizamos envíos en todo el país.</p> 
+            <p>Consulte precios por mayor.</p>
+        </div>
+
+    </div>
+    <div class="main">
+            <div class="contcontacto">
+            <div class = "donde"> <h2>¿Dónde estamos? </h2> </div>
+            <div class = "donde"> <h3>Castelli 46, Capital Federal </h3> </div>
+            <div class = "donde">  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7938797456013!2d-58.4047416!3d-34.60937330000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaee0d846185%3A0x6293ad9ce300549a!2sCastelli%2046%2C%20C1031AAB%20CABA!5e0!3m2!1ses-419!2sar!4v1653907187349!5m2!1ses-419!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"  referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+            <div class = "donde"> <h2 style="color:antiquewhite">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h2> </div>
+        </div>
+            
+             <div class="centro">
+                <div class="side">
+                    <h2>CONTACTO</h2><br>
+                    <p>Si tiene alguna consulta, por favor, completá el formulario y te contactaremos a la brevedad.
+
+                    </p>
+                </div>
+                <div class="main">
+                    
+                    <form action="" method="get">
+                        <p>
+                        <label for="nombre">Nombre y Apellido:</label>
+                        <input type="text" name="nombre" id="nombre" size="30" maxlength="25" autocomplete="off" onkeyup="validateName()">
+                        </p><br>
+                        <p>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" name="mail" id="mail" onkeyup="validateMail()">
+                        </p> <br>
+                        <p>
+                        <label for="telefono">Teléfono: </label>
+                        <input type="text" name="telefono" id="telefono">
+                         </p><br>
+                         <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" onkeyup="validateMessage()"></textarea>
+                        <br><br>
+                        <button type= "submit" value="Enviar" id="enviar" onclick="validateForm()">Enviar</button>
+                    </form>
+                </div>
+             </div>
+   
+             
+    </div>
+
+         
+</div>
+    
+<!-- Footer -->
+<div class="footer">
+    <a href="https://instagram.com/casanataliakids?igshid=YmMyMTA2M2Y="> <box-icon type='logo' name='instagram' animation='tada' color="pink"></box-icon></a><br>
+    <i class='bx bxl-whatsapp'>01130927870</i>
+    <p>Dirección: Castelli 46, CABA</p>
+    <p>Horarios: Lunes a Viernes 8 a 18 hs / Sábado 8 a 14 hs</p>
+    <br>
+   <p>© Copyright CasaNataliaKids indumentaria - 2022</p> 
+   <p>Todos los derechos reservados</p>
+</div>
+    
+</body>
+</html>
+
+
+
+
+
